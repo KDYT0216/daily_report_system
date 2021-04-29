@@ -1,4 +1,3 @@
-
 package utils;
 
 import javax.persistence.EntityManager;
@@ -14,7 +13,7 @@ public class DBUtil {
     }
 
     private static EntityManagerFactory getEntityManagerFactory() {
-        if(emf == null) {
+        if (emf == null) {
             emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         }
 
