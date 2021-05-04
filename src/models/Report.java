@@ -51,6 +51,12 @@ public class Report {
     @Column(name = "title", length = 255, nullable = false)
     private String title;
 
+    @Column(name = "begin_at",nullable = false)
+    private String begin_at;
+
+    @Column(name = "finish_at",nullable = false)
+    private String finish_at;
+
     @Lob
     @Column(name = "content",nullable = false)
     private String content;
@@ -116,5 +122,22 @@ public class Report {
     public void setUpdated_at(Timestamp updated_at) {
         this.updated_at = updated_at;
     }
+
+    public String getBegin_at() {
+        return begin_at;
+    }
+
+    public void setBegin_at(String begin_at) {
+        this.begin_at = begin_at;
+    }
+
+    public String getFinish_at() {
+        return finish_at;
+    }
+
+    public void setFinish_at(String finish_at) {
+        this.finish_at = finish_at;
+    }
+
 
 }
